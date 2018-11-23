@@ -3,11 +3,17 @@ package secondGroup.webmanger.good;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ *商品信息类
+ *
+ * @author 高小炎
+ */
 public class GoodsBean {
 
 	private String goodsNo;
 	private String goodsName;
 	private BigDecimal goodsPrice;
+	private String category;
 	private String producer;
 	private String goodsDeliveryAddress;
 	private int goodsMonthSale;
@@ -16,6 +22,12 @@ public class GoodsBean {
 	private Date expriDate;
 	private int type;
 	
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
 	public String getProducer() {
 		return producer;
 	}
