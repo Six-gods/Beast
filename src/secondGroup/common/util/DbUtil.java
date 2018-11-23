@@ -18,7 +18,6 @@ private static DruidDataSource dds;
 	private static final String MYSQL_USERNAME = "root";
 	private static final String MYSQL_PASSWORD = "root";
 
-
 	static {
 		dds = new DruidDataSource();
 		dds.setDriverClassName(MYSQL_DRIVER);
@@ -67,6 +66,4 @@ private static DruidDataSource dds;
 		close(stat);
 		close(conn);
 	}
-	
-	
 }
