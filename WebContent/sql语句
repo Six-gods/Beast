@@ -1,0 +1,14 @@
+CREATE TABLE `goods_info` (
+  `goods_no` varchar(4) NOT NULL,
+  `goods_name` varchar(30) NOT NULL,
+  `goods_price` double(10,2) NOT NULL,
+  `goods_producer` varchar(10) DEFAULT NULL,
+  `goods_delivery_address` varchar(30) DEFAULT NULL,
+  `goods_month_sale` int(5) DEFAULT NULL,
+  `goods_number` int(3) NOT NULL,
+  `goods_product_date` varchar(10) DEFAULT NULL,
+  `goods_shelf_life` varchar(10) DEFAULT NULL,
+  `goods_type` int(1) NOT NULL,
+  `goods_category` varchar(5) NOT NULL,
+  PRIMARY KEY (`goods_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
