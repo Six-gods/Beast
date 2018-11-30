@@ -1,25 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<title>搜索页面</title>
-
 		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
 		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
-
 		<link href="../basic/css/demo.css" rel="stylesheet" type="text/css" />
-
 		<link href="../css/seastyle.css" rel="stylesheet" type="text/css" />
-
 		<script type="text/javascript" src="../basic/js/jquery-1.7.min.js"></script>
 		<script type="text/javascript" src="../js/script.js"></script>
 	</head>
-
 	<body>
-
 		<!--顶部导航条 -->
 		<div class="am-container header">
 			<ul class="message-l">
@@ -56,33 +48,59 @@
 				<div class="search-bar pr">
 					<a name="index_none_header_sysc" href="#"></a>
 					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="按商品编号搜索" autocomplete="off">
 						<input id="ai-topsearch" class="submit am-btn"  value="搜索" index="1" type="submit">
 					</form>
 				</div>
 			</div>
+			<table class="tablelist">
+		    	<thead>
+		    	<tr>
+			        <th><input name="" type="checkbox" value="" checked="checked"/></th>
+			        <th>商品编号<i class="sort"><img src="${ctxPath }/static/images/px.gif" /></i></th>
+			        <th>商品名称</th>
+			        <th>价格</th>
+			        <th>库存量</th>
+			        <th>发货地址</th>
+			        <th>生产日期</th>
+			        <th>保质期</th>
+		        </tr>
+		        </thead>
+		        <tbody>
+		        <c:if test="${orderItemList != null}">
+			        <c:forEach var="orderItem" items="${orderItemList}">
+			        <tr>
+				        <td><input name="" type="checkbox" value="" /></td>
+				        <td>${orderItem.barCode }</td>
+				        <td>${orderItem.goodsName }</td>
+				        <td>${orderItem.price }</td>
+				        <td>${orderItem.goodsCount }</td>
+				        <td><a href="#" class="tablelink"> 删除</a></td>
+			        </tr> 
+			        </c:forEach>
+		        </c:if>
+		        </tbody>
+		    </table>
 			<div class="clear"></div>
 			<b class="line"></b>
            <div class="search">
 			<div class="search-list">
 			<div class="nav-table">
-					   <div class="long-title"><span class="all-goods">全部分类</span></div>
-					   <div class="nav-cont">
-							<ul>
-								<li class="index"><a href="#">首页</a></li>
-                                <li class="qc"><a href="#">闪购</a></li>
-                                <li class="qc"><a href="#">限时抢</a></li>
-                                <li class="qc"><a href="#">团购</a></li>
-                                <li class="qc last"><a href="#">大包装</a></li>
-							</ul>
-						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>我的福利
-						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
-						    </div>
-						</div>
+			   <div class="long-title"><span class="all-goods">全部分类</span></div>
+			   <div class="nav-cont">
+					<ul>
+						<li class="index"><a href="#">首页</a></li>
+                              <li class="qc"><a href="#">闪购</a></li>
+                              <li class="qc"><a href="#">限时抢</a></li>
+                              <li class="qc"><a href="#">团购</a></li>
+                              <li class="qc last"><a href="#">大包装</a></li>
+					</ul>
+				    <div class="nav-extra">
+				    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>我的福利
+				    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
+				    </div>
+				</div>
 			</div>
-			
-				
 					<div class="am-g am-g-fixed">
 						<div class="am-u-sm-12 am-u-md-12">
 	                  	<div class="theme-popover">														
@@ -91,7 +109,6 @@
 								<a title="坚果" href="#">坚果</a>
 								<a title="瓜子" href="#">瓜子</a>
 								<a title="鸡腿" href="#">豆干</a>
-
 							</div>
 							<ul class="select">
 								<p class="title font-normal">
@@ -159,7 +176,6 @@
 									<li class="big"><a title="评价" href="#">评价为主</a></li>
 								</div>
 								<div class="clear"></div>
-
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
 									<li>
 										<div class="i-pic limit">
@@ -204,7 +220,6 @@
 									</li>
 									<li>
 										<div class="i-pic limit">
-											
 											<img src="../images/imgsearch1.jpg" />
 											<p class="title fl">手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
 											<p class="price fl">
