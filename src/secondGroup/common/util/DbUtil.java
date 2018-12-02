@@ -13,7 +13,7 @@ public class DbUtil {
 
 private static DruidDataSource dds;		
 
-	private static final String MYSQL_URL = "jdbc:mysql://localhost:3306/shop";
+	private static final String MYSQL_URL = "jdbc:mysql://localhost:3306/user";
 	private static final String MYSQL_DRIVER = "com.mysql.jdbc.Driver";
 	private static final String MYSQL_USERNAME = "root";
 	private static final String MYSQL_PASSWORD = "root";

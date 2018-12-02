@@ -14,7 +14,7 @@
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-		<link rel="stylesheet" href="../AmazeUI-2.4.2/assets/css/amazeui.css" />
+		<link rel="stylesheet" href="${ctxpath }/one/AmazeUI-2.4.2/assets/css/amazeui.css" />
 		<link href="${ctxpath }/one/css/dlstyle.css" rel="stylesheet" type="text/css">
 	</head>
 

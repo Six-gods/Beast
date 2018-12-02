@@ -19,7 +19,7 @@
 
 		<link rel="stylesheet" href="${ctxpath }/one/AmazeUI-2.4.2/assets/css/amazeui.min.css" />
 		<link href="${ctxpath }/one/css/dlstyle.css" rel="stylesheet" type="text/css">
-		<script src="${ctxpath }/oneAmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="${ctxpath }/one/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
 		<script src="${ctxpath }/one/AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
 
 	</head>
@@ -32,7 +32,7 @@
 
 		<div class="res-banner">
 			<div class="res-main">
-				<div class="login-banner-bg"><span></span><img src="${ctxpath }/static/images/big.jpg" /></div>
+				<div class="login-banner-bg"><span></span><img src="${ctxpath }/one/images/big.jpg" /></div>
 				<div class="login-box">
 
 						<div class="am-tabs" id="doc-my-tabs">
@@ -57,21 +57,22 @@
 									    <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
 									    <input type="password" name="passwordRepeat" id="passwordRepeat" placeholder="确认密码">
 	                 </div>
-	                <div class="login-links">
-						<label for="reader-me">
-							<input id="reader-me" type="checkbox"> 点击表示您同意商城《服务协议》
-						</label>
-			  		</div>
+
 					<div class="am-cf">
 						<input type="submit" name="" value="注册" class="registerbutton1">
 					</div>	
                  
                  </form>
+                 	 <div class="login-links">
+						<label for="reader-me">
+							<input id="reader-me" type="checkbox"> 点击表示您同意商城《服务协议》
+						</label>
+			  		</div>
 
 								</div>
 
 								<div class="am-tab-panel">
-									<form action="RegistServlet.do" method="post">
+									<form action="../RegistServlet.do" method="post">
                  <div class="user-phone">
 								    <label for="phone"><i class="am-icon-mobile-phone am-icon-md"></i></label>
 								    <input type="tel" name="phone" id="phone" placeholder="请输入手机号">
@@ -90,12 +91,6 @@
 								    <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
 								    <input type="password" name="passwordRepeat" id="passwordRepeat" placeholder="确认密码">
                  </div>	
-									</form>
-								 <div class="login-links">
-										<label for="reader-me">
-											<input id="reader-me" type="checkbox"> 点击表示您同意商城《服务协议》
-										</label>
-							  	</div>
 										<div class="am-cf">
 											<input type="submit" name="" value="注册" class="registerbutton2" >
 										</div>
