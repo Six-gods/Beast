@@ -21,6 +21,29 @@
 		<link href="${ctxpath }/one/css/dlstyle.css" rel="stylesheet" type="text/css">
 		<script src="${ctxpath }/one/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
 		<script src="${ctxpath }/one/AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			alert("sss")
+			$("#email").click(
+				alert("sss")
+				function(){
+					var emailvalue=$("input[name='email']").val();
+					if(emailvalue==null){
+						$("input[name='email']").val("email不可为空");
+					}
+				}	
+			);
+			
+			
+			
+			
+			
+			
+		})
+		
+		
+		
+		</script>
 
 	</head>
 
@@ -85,11 +108,11 @@
 					</div>
                  <div class="user-pass">
 								    <label for="password"><i class="am-icon-lock"></i></label>
-								    <input type="password" name="password" id="password" placeholder="设置密码">
+								    <input type="password" name="password" id="password1" placeholder="设置密码">
                  </div>										
                  <div class="user-pass">
 								    <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
-								    <input type="password" name="passwordRepeat" id="passwordRepeat" placeholder="确认密码">
+								    <input type="password" name="passwordRepeat" id="passwordRepeat1" placeholder="确认密码">
                  </div>	
 										<div class="am-cf">
 											<input type="submit" name="" value="注册" class="registerbutton2" >

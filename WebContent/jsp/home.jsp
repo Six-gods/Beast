@@ -20,19 +20,8 @@
 		<link href="${ctxpath }/one/css/skin.css" rel="stylesheet" type="text/css" />
 		<script src="${ctxpath }/one/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
 		<script src="${ctxpath }/one/AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
-		<script type="text/javascript">
-		$(function(){
-				$("input[name='goodsName']").keypress(function(e){	
-					alert("------------------"+e.keyCode);
-					if(e.keyCode==13){
-						
-					}
-				})
-				
-	
-			}
-		) 
-		</script>
+		
+
 
 	</head>
 

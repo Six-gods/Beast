@@ -24,14 +24,13 @@ public class RegistServlet extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String ctxpath=request.getContextPath();
 		String phone=request.getParameter("phone");
 		String email=request.getParameter("email");
 		String password=request.getParameter("password");
 		String passwordRepeat=request.getParameter("passwordRepeat");
 		RegistDao registdao=new RegistDao();
 		registdao.regist(email, phone, password, passwordRepeat);
-		response.sendRedirect("/secondGroups/jsp/person-address.jsp");
+		response.sendRedirect("/secondGroups/jsp/home.jsp");
 	}
 
 }

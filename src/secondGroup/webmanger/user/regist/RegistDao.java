@@ -22,7 +22,7 @@ public class RegistDao {
 		try {
 			connection=DbUtil.getDBConn();
 			statement=connection.createStatement();
-			if(statement.execute(sql)) {
+			if(statement.executeupdate) {
 				System.out.println("注册成功");
 			}
 		} catch (SQLException e) {
